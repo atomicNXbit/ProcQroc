@@ -82,8 +82,8 @@ int procAttach(pid_t x){
 
     int getVal[256];
     ssize_t nread;
-    struct iovec local[0];
-    struct iovec remote[0];
+    struct iovec local[1];
+    struct iovec remote[1];
 
     local[0].iov_base = &getVal;
     local[0].iov_len = sizeof(getVal);
